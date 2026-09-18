@@ -1,0 +1,5 @@
+{
+  "engine": "searxng",
+  "braveApiKey": "BSA...",
+  "searxngUrl": "http://localhost:1235/search?q="
+}

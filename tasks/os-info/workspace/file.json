@@ -1,0 +1,9 @@
+{
+  "osName": "Linux",
+  "distro": "na",
+  "ram": 8192,
+  "cpu": "x86_64",
+  "user": "admin",
+  "shell": "/bin/bash",
+  "time": 1234567890
+}

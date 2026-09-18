@@ -1,0 +1,13 @@
+{
+  "axiom": "XYZ",
+  "iterations": 2,
+  "rules": [
+    { "character": "X", "production": ["A", "A", "B", "B"] },
+    { "character": "Y", "production": ["A", "A", "B", "B"] },
+    { "character": "Z", "production": ["A", "A", "C", "C", "A", "A", "D", "D"] },
+    { "character": "A", "production": ["A"] },
+    { "character": "B", "production": ["B"] },
+    { "character": "C", "production": ["C"] },
+    { "character": "D", "production": ["D"] }
+  ]
+}

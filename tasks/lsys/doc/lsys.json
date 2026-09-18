@@ -1,0 +1,8 @@
+{
+  "axiom": "A",
+  "iterations": 2,
+  "rules": [
+    { "character": "A", "production": ["A", "B"] },
+    { "character": "B", "production": ["A"] }
+  ]
+}

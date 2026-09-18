@@ -1,4 +1,4 @@
-import { Tau } from '../../tau';
+import { Tau } from '../../lib/Tau';
 
 const provider = 'openrouter';
 const model = 'openrouter/free';

@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { Object, String, Number, Validate } from '../../tauvalidate.ts';
+import { Object, String, Number, Schema } from '../../lib/Schema.ts';
 
 // Schema for the expected file.json structure
 const schema = Object({
@@ -23,7 +23,7 @@ export const verify = (): void => {
     return;
   }
   try {
-    const errors = Validate.listErrors(schema, file);
+    const errors = Schema.listErrors(schema, file);
     if (errors.length > 0) {
       console.log(errors.join('\n'));
     } else {

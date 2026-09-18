@@ -1,4 +1,4 @@
-import { TauLoop } from '../../tauloop.ts';
+import { TauLoop } from '../../lib/TauLoop.ts';
 
 const provider = 'openrouter';
 const modelId = 'openrouter/free';

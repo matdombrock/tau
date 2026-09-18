@@ -3,7 +3,7 @@
 > [!NOTE]
 > 🧔 This README was written by a human!
 
-A lightweight TypeScript library for writing **closed agentic loops**.
+A lightweight TypeScript framework for writing **closed agentic loops**.
 
 Built on top of the **pi coding agent** SDK. Tau wraps agent sessions so you can run prompts, stream output, and build self-correcting loops that iterate on a task until a **deterministic verifier** passes.
 

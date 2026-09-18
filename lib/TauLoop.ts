@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process';
-import { Tau, ThinkingLevel } from './tau';
+import { Tau, ThinkingLevel } from './Tau';
 
 
 export type TauLoopOpt = {

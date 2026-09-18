@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { TauLoop } from '../../tauloop.ts';
+import { TauLoop } from '../../lib/TauLoop.ts';
 import { target } from './target';
 
 const provider = 'openrouter';

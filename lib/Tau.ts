@@ -67,7 +67,8 @@ export class Tau {
       this.subsessionMsgs.push(msg);
       if (msg.role === 'assistant') {
         msg.content.forEach((c) => {
-          if (c.type === 'text') res += c.text;
+          // Overwrite, dont append!
+          if (c.type === 'text') res = c.text;
         })
       }
     });

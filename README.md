@@ -51,6 +51,29 @@ tau.enableStreaming();
 const res = await tau.sendPrompt('List the files in this directory.');
 tau.sessionEnd();
 ```
+
+## Tau Loops
+
+A Tau Loop task has a structure like this:
+
+```
+workspace/
+    verify.ts
+    ...
+README.md
+loop.ts
+verify.ts
+...
+```
+
+See `./tasks/minimal-loop/` for a full example. 
+
+The agent can only access files in the specified workspace (`cwd`).
+
+The content of `verify.ts` is run automatically. It should write to `stdout` either `pass` or some failure message that will be relayed to the agent. 
+
+The `./workspace/verify.ts` script is a simple wrapper that allows the agent to verify its own work but does *not* allow it to see the actual `verify.ts` script. 
+
 ## Container
 
 > [!WARNING]

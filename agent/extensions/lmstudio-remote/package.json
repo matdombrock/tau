@@ -1,8 +1,0 @@
-{
-  "name": "lmstudio-remote-extension",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "@lmstudio/sdk": "^1.5.0"
-  }
-}

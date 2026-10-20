@@ -56,6 +56,14 @@ export class Tau {
       tools: this.session?.agent.state.tools,
     };
   }
+  sessionCost() {
+    if (!this.session) throw 'Error: no session';
+    const stats = this.session.getSessionStats();
+    return {
+      cost: stats.cost,
+      tokens: stats.tokens, // { input, output, cacheRead, cacheWrite, total }
+    };
+  }
   isReady(): boolean {
     return (this.session !== null);
   }
